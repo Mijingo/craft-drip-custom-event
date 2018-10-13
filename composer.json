@@ -1,0 +1,41 @@
+{
+    "name": "mijingo/drip-custom-event",
+    "description": "Add or update subscribers based on custom events.",
+    "type": "craft-plugin",
+    "version": "1.0.0",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "drip custom event"
+    ],
+    "support": {
+        "docs": "https://github.com/ryanirelan/drip-custom-event/blob/master/README.md",
+        "issues": "https://github.com/ryanirelan/drip-custom-event/issues"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ryan Irelan",
+            "homepage": "https://craftquest.io"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1",
+        "guzzlehttp/guzzle": "~6.0"
+    },
+    "autoload": {
+        "psr-4": {
+          "mijingo\\dripcustomevent\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Drip Custom Event",
+        "handle": "drip-custom-event",
+        "hasCpSettings": true,
+        "hasCpSection": false,
+        "changelogUrl": "https://raw.githubusercontent.com/ryanirelan/drip-custom-event/master/CHANGELOG.md",
+        "class": "mijingo\\dripcustomevent\\DripCustomEvent"
+    }
+}
